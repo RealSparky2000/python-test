@@ -7,7 +7,7 @@ import os
 Client = discord.Client ()
 client = commands.bot(command_prefix='m.')
 @client.event
-async def on_ready();
+async def on_ready() :
      print("Bot has been launched!")
      await client.change_presence(game=discord.Game(name="New me on Python"))
     
