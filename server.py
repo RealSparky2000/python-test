@@ -13,7 +13,7 @@ async def on_ready() :
     
 @client.event
 async def on_message(message) :
-  if message.content.startsWith('m.python') :
+  if message.content.startswith('m.python') :
   msg = 'Yeah, i have been launched on Python 3.6.7 (discord.py)'.format(message)
   await client.send_message(message.channel, msg)
   
