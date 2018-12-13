@@ -14,8 +14,8 @@ async def on_ready() :
 @client.event
 async def on_message(message) :
   if message.content.startswith('m.python') :
-  message = 'Yeah, i have been launched on Python 3.6.7 (discord.py)'.format(message)
-  await client.send_message(message.channel, message)
+  msg = 'Yeah, i have been launched on Python 3.6.7 (discord.py)'.format(message)
+  await client.send_message(message.channel, msg)
   
   client.run(os.getenv(SECRET))
   
