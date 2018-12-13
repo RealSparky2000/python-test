@@ -14,7 +14,7 @@ async def on_ready() :
 @client.event
 async def on_message(message) :
   if message.content.startswith('m.python') :
-  msg = await client.send_message(message.channel, `I am an Discord Bot powered by Python, ye bo.`)
+  msg = await client.send_message(message.channel, 'I am an Discord Bot powered by Python (3.6.7)')
   
   client.run(os.getenv(SECRET))
   
